@@ -33,10 +33,9 @@
                             Heatmaps
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item active" href="biopsyVisits.html">Biopsy Visits</a>
-                            <a class="dropdown-item" href="dsaDataAvailable.html">DSA Data Available</a>
+                            <a class="dropdown-item" href="biopsyVisits.html">Biopsy Visits</a>
+                            <a class="dropdown-item active" href="dsaDataAvailable.html">DSA Data Available</a>
                             <a class="dropdown-item" href="dsaDataMissing.html">DSA Data Missing</a>
-
                         </div>
                     </li>
                     <li class="nav-item">
@@ -53,22 +52,28 @@
         <div class="row">
             <div class="col-lg-9 col-md-12">
                 <!-- Left box  -->
-                <div class="box" style="padding-bottom: 5px;">
-                    <h3 class="title">Number of Biopsy Samples collected for CTOT-08</h3>
+                <div class="box">
+                    <h3 class="title">What DSA data is available currently ?</h3>
                     <hr>
                     <p>
-                        The green highlighted cells indicate that a subject has a biopsy taken at that time point. There were in total 812 samples with biopsy timepoints. The darker shade indicates more visits occured for that visit type.
-                    </p>
-                    <br>
-                    <p>
                         Data Exploration :
-                        <ol>
-                            <li>Majority of the patients had biopsy collected at Visit 08(Month 12) and Visit 12(Month 24).</li>
-                            <li>There were 13 patients with more than one SR visit.</li>
-                        </ol>
+                        <br />
+                        <ul>
+                            <li>DSA Data was collected only from 4 sites from a total of 5 sites.</li>
+                            The code and names of 4 sites are as follows:
+                            <ol>
+                                <li>45:"Scripps Center for Organ and Cell Tx"</li>
+                                <li>01:"The Cleveland Clinic"</li>
+                                <li>10:"Northwestern University,Feinberg School of Medicine"</li>
+                                <li>44: "Mayo Clinic- Arizona"</li>
+                            </ol>
+                            <li>Site 40, Medical University of South Carolina didn't provide any data for DSA.</li>
+                            <li>Few Class 1 or Class 2 antibodies are present but its types are absent, we must brainstorm on whether this data is reliable or not and must take further steps to discard data from counts.</li>
+                            <li>There are about 243 samples that has the DSA data.</li>
+                        </ul>
                     </p>
+                    <img src="assets/images/DSA_Collected_HeatMap.png" alt="DSA data availability">
 
-                    <img src="assets/images/Biopsy_Collected_HeatMap.png" alt="Biopsy Collected HeatMap">
 
                 </div>
             </div>
@@ -77,7 +82,6 @@
                 <div class="box">
                     <h5 class="title">Heatmaps</h5>
                     <hr>
-
 
                     <div class="container">
                         <div class="row" style="padding-bottom: 30px;">
@@ -101,13 +105,11 @@
                             </div>
                         </div>
                     </div>
+
+
                 </div>
-
-
-
             </div>
         </div>
-    </div>
     </div>
 
     <!-- Bootstrap JS -->

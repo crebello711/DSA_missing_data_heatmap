@@ -21,7 +21,7 @@
     <div class="navigation">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" style="background-color: #0BADA6;" href="index.html">Main</a>
-            <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            <button class="navbar-toggler border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -33,10 +33,9 @@
                             Heatmaps
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item active" href="biopsyVisits.html">Biopsy Visits</a>
+                            <a class="dropdown-item" href="biopsyVisits.html">Biopsy Visits</a>
                             <a class="dropdown-item" href="dsaDataAvailable.html">DSA Data Available</a>
-                            <a class="dropdown-item" href="dsaDataMissing.html">DSA Data Missing</a>
-
+                            <a class="dropdown-item active" href="dsaDataMissing.html">DSA Data Missing</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -53,22 +52,28 @@
         <div class="row">
             <div class="col-lg-9 col-md-12">
                 <!-- Left box  -->
-                <div class="box" style="padding-bottom: 5px;">
-                    <h3 class="title">Number of Biopsy Samples collected for CTOT-08</h3>
+                <div class="box">
+                    <h3 class="title">How many samples are Missing DSA data ?</h3>
                     <hr>
                     <p>
-                        The green highlighted cells indicate that a subject has a biopsy taken at that time point. There were in total 812 samples with biopsy timepoints. The darker shade indicates more visits occured for that visit type.
+                        <ul>
+                            <li>596 biopsy marked samples are missing DSA data and they require serum tubes which can be further processed for DSA testing.</li>
+                            <li>Below are the serum sample count required per visit</li>
+                            <ol>
+                                <li>Month 2 = 11 Serum barcodes</li>
+                                <li>Month 3 = 59 Serum barcodes</li>
+                                <li>Month 4 = 96 Serum barcodes</li>
+                                <li>Month 6 = 20 Serum barcodes</li>
+                                <li>Month 12 = 150 Serum barcodes</li>
+                                <li>Month 24 = 109 Serum barcodes</li>
+                                <li>IM visits= 41 Serum barcodes</li>
+                                <li>SR visits= 83 Serum barcodes</li>
+                            </ol>
+                
+                        </ul>
+                    
                     </p>
-                    <br>
-                    <p>
-                        Data Exploration :
-                        <ol>
-                            <li>Majority of the patients had biopsy collected at Visit 08(Month 12) and Visit 12(Month 24).</li>
-                            <li>There were 13 patients with more than one SR visit.</li>
-                        </ol>
-                    </p>
-
-                    <img src="assets/images/Biopsy_Collected_HeatMap.png" alt="Biopsy Collected HeatMap">
+                    <img src="assets/images/DSA_NotCollected_HeatMap.png" alt="DSA Data Missing">
 
                 </div>
             </div>
@@ -77,7 +82,6 @@
                 <div class="box">
                     <h5 class="title">Heatmaps</h5>
                     <hr>
-
 
                     <div class="container">
                         <div class="row" style="padding-bottom: 30px;">
@@ -101,13 +105,11 @@
                             </div>
                         </div>
                     </div>
+
+
                 </div>
-
-
-
             </div>
         </div>
-    </div>
     </div>
 
     <!-- Bootstrap JS -->

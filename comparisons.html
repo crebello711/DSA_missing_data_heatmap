@@ -29,14 +29,13 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                           aria-haspopup="true" aria-expanded="false">
-                            Heatmaps
+                           aria-haspopup="true" aria-expanded="false" style="color: #6D8092">
+                            Plots
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item active" href="biopsyVisits.html">Biopsy Visits</a>
+                            <a class="dropdown-item" href="biopsyVisits.html">Biopsy Visits</a>
                             <a class="dropdown-item" href="dsaDataAvailable.html">DSA Data Available</a>
-                            <a class="dropdown-item" href="dsaDataMissing.html">DSA Data Missing</a>
-
+                            <a class="dropdown-item active" href="dsaDataMissing.html">DSA Data Missing</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -51,63 +50,32 @@
     <!-- Content Section -->
     <div class="container">
         <div class="row">
-            <div class="col-lg-9 col-md-12">
+            <div>
                 <!-- Left box  -->
-                <div class="box" style="padding-bottom: 5px;">
-                    <h3 class="title">Number of Biopsy Samples collected for CTOT-08</h3>
-                    <hr>
-                    <p>
-                        The green highlighted cells indicate that a subject has a biopsy taken at that time point. There were in total 812 samples with biopsy timepoints. The darker shade indicates more visits occured for that visit type.
-                    </p>
-                    <br>
-                    <p>
-                        Data Exploration :
-                        <ol>
-                            <li>Majority of the patients had biopsy collected at Visit 08(Month 12) and Visit 12(Month 24).</li>
-                            <li>There were 13 patients with more than one SR visit.</li>
-                        </ol>
-                    </p>
-
-                    <img src="assets/images/Biopsy_Collected_HeatMap.png" alt="Biopsy Collected HeatMap">
-
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-11">
-                <!-- Right Box -->
                 <div class="box">
-                    <h5 class="title">Heatmaps</h5>
+                    <h3 class="title">Comparison: Biopsy Done vs. DSA missing data</h3>
                     <hr>
-
-
-                    <div class="container">
-                        <div class="row" style="padding-bottom: 30px;">
-                            <div class="col-6">
+                    <p>Click any plot to get an in-depth review.</p>
+                    <div class="container" style="padding-bottom: 30px;">
+                        <div class="row">
+                            <div class="col-lg-6" style="padding: 20px;">
+                                <div class="title">Biopsy Visits</div>
                                 <a href="biopsyVisits.html">
                                     <img class="panel" src="assets/images/Biopsy_Collected_HeatMap.png" alt="Biopsy Collected Image">
                                 </a>
                             </div>
-                            <div class="col-6">
-                                <a href="dsaDataAvailable.html">
-                                    <img class="panel active" src="assets/images/DSA_Collected_HeatMap.png" alt="DSA available">
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="row" style="padding-bottom: 30px;">
-                            <div class="col-6">
+                            <div class="col-lg-6" style="padding: 30px;">
+                                <div class="title">Missing DSA data</div>
                                 <a href="dsaDataMissing.html">
                                     <img class="panel" src="assets/images/DSA_NotCollected_HeatMap.png" alt="DSA Missing">
                                 </a>
                             </div>
                         </div>
+
                     </div>
                 </div>
-
-
-
             </div>
         </div>
-    </div>
     </div>
 
     <!-- Bootstrap JS -->

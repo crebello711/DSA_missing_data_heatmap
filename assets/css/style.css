@@ -50,6 +50,11 @@ img {
     height: 100% !important;
 }
 
+.imagedim {
+    width: 1000px;
+    height: 1000px;
+} 
+
 .active, .panel:hover {
     border-color: #0BADA6;
     border-style: solid;

@@ -20,7 +20,7 @@
     <!-- Navigation Section -->
     <div class="navigation">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" style="background-color: #0BADA6;" href="index.html">About</a>
+            <a class="navbar-brand" style="background-color: #0BADA6;" href="index.html">Main</a>
             <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -30,20 +30,16 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
-                            Plots
+                            Heatmaps
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="biopsyVisits.html">Biopsy Visits</a>
-                            <a class="dropdown-item" href="humidity.html">Humidity</a>
-                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                            <a class="dropdown-item" href="windSpeed.html">Wind Speed</a>
+                            <a class="dropdown-item" href="dsaDataAvailable.html">DSA Data Available</a>
+                            <a class="dropdown-item" href="dsaDataMissing.html">DSA Data Missing</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="comparisons.html">Comparison</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="data.html">Data</a>
+                        <a class="nav-link" href="comparisons.html">Heatmap Comparison</a>
                     </li>
 
                 </ul>
@@ -58,19 +54,25 @@
                 <div class="box">
                     <h3 class="title">CTOT-08 DSA Missing Samples</h3>
                     <hr>
-
-                    <img src="Figures/SampleCountFlowChart.png" class="vizualization rounded float-left" alt="Sample Count Flow Chart">
                     <p>
-                        The purpose of this project was to understand how many samples we need to process so we could generate DSA data.
+                        The purpose of this project was to understand how many samples we require to do DSA testing.
                     </p>
-
-                    <img src="Figures/Sample_Counts.png" class="vizualization rounded float-left" alt="Sample_Counts">
+                    <img src="Figures/SampleCountFlowChart.png" class=”imagedim” alt="Sample Count Flow Chart">
                     <p>
-                        After assembling the dataset, I used seaborn from python to generate a Heatmap.
-                        Factors I looked at included: Biopsy related visit type and DSA data missing for such visit type. This site provides the
-                        data and visualizations created as part of the project, as well as explanations and descriptions of
-                        any trends witnessed.
+                        <br />
                     </p>
+                    <p>
+                        After assembling the dataset, I used seaborn function from python to generate a Heatmap.
+                        Factors I looked at included biopsy related visit types and DSA data missing for such visit type from previously collected data. This site provides the
+                        data and visualizations created as part of the project, as well as explanations and descriptions of any differences witnessed.
+
+                    </p>
+                    <p>
+                        <h5>Bar Graph showing sample counts for missing DSA data per visit types</h5>
+                
+                    </p>
+                    <img src="Figures/Sample_Counts.png" class="”imagedim”" alt="Sample_Counts">
+
                     <br />
 
                 </div>
@@ -90,15 +92,15 @@
                                 </a>
                             </div>
                             <div class="col-6">
-                                <a href="humidity.html">
-                                    <img class="panel" src="assets/images/DSA_Collected_HeatMap.png" alt="DSA Collected Samples">
+                                <a href="dsaDataAvailable.html">
+                                    <img class="panel active" src="assets/images/DSA_Collected_HeatMap.png" alt="DSA available">
                                 </a>
                             </div>
                         </div>
 
                         <div class="row" style="padding-bottom: 30px;">
                             <div class="col-6">
-                                <a href="cloudiness.html">
+                                <a href="dsaDataMissing.html">
                                     <img class="panel" src="assets/images/DSA_NotCollected_HeatMap.png" alt="DSA Missing">
                                 </a>
                             </div>
